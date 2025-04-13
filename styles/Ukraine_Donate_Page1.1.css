@@ -1,0 +1,116 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+/*starts the grid container with main picture, columns of text */
+.container {
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-areas:
+    'main'
+    'content'
+    'column1'
+    'column2'
+    'footer'
+}
+.item {
+    border: 1px solid black;
+}
+.main {
+    grid-area: main;
+    height: 200px;
+    background: rgb(213, 234, 241)
+    
+}
+.content {
+    grid-area: content;
+    height: 100px;
+    background: rgb(251, 251, 240);
+}
+.column1,.column2 {
+    gap: 10px;
+    padding: 10px;
+    background: rgb(251, 251, 240);  
+    font-size: 20px;  
+}
+.column1 {
+    grid-area: column1;   
+}
+.column2 {
+    grid-area: column2; 
+}
+.column1 h2 {
+    font-size: 25px;
+}
+.column2 h2 {
+    font-size: 25px;
+}
+h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center; 
+}
+span {
+    text-transform: uppercase;
+}
+em {
+    color: red;
+}
+h3 {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+h4 {
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.button {
+    display: flex;
+    grid-area: button;
+    color: white;
+    background: blue;
+    border: 2px solid white;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px;      
+}
+button:hover {
+        color: yellow;  
+}
+@media all and (min-width:800px) {
+        .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        grid-template-areas:
+        'main main'
+        'content content'
+        'column1 column2'
+        'footer footer'
+}
+}
+@media all and (min-width:750px) {
+    .container {
+    margin-top: 120px;
+}
+}
+
