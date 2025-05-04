@@ -77,30 +77,14 @@
     font-size: 20px;
     padding: 10px;
     margin: 5px 0;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border-radius: 4px;
-    overflow: hidden;
-    height: auto;
-}
-
-.list-style-type_square:hover {
-    background-color: rgba(255, 0, 0, 0.1);
-    transform: translateX(5px);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1;
 }
 
 .list-style-type_square span {
     font-weight: bold;
     font-style: italic;
     color: red;
-    transition: color 0.3s ease;
 }
 
-.list-style-type_square:hover span {
-    color: #cc0000;
-}
 h2 {
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -137,7 +121,7 @@ span {
             margin-top: 110px;
             }
         }
-
+/*War duration timer*/
 #war-timer {
     grid-area: timer;
     display: flex;
