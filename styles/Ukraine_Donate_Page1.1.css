@@ -97,6 +97,7 @@ h4 {
 button:hover {
         color: yellow;  
 }
+/*Responsive design*/  
 @media all and (min-width:800px) {
         .container {
         grid-template-columns: 1fr 1fr;
