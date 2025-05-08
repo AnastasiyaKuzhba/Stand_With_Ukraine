@@ -3,12 +3,13 @@
     box-sizing: border-box;
     list-style-type: none;
 }
-/*starts the grid container with main picture, columns of text */
+
+/* Mobile-first base styles */
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 250px; 
+    gap: 15px;
+    margin-top: 80px;
     grid-template-areas:
     'photo1'
     'photo2'
@@ -18,9 +19,11 @@
     'photo6'
     'footer'
 }
+
 .item {
     border: 1px solid black;
 }
+
 .photo1,
 .photo2,
 .photo3,
@@ -28,72 +31,111 @@
 .photo5,
 .photo6 {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    background: lightgrey;
-    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    background: rgb(220, 218, 218);
+    padding: 15px;
 }
 
-.photo1 {
-    grid-area: photo1;  
+.photo1 { grid-area: photo1; }
+.photo2 { grid-area: photo2; }
+.photo3 { grid-area: photo3; }
+.photo4 { grid-area: photo4; }
+.photo5 { grid-area: photo5; }
+.photo6 { grid-area: photo6; }
+
+.activist_image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
 }
-.photo2 {
-    grid-area: photo2;
-}
-.photo3 {
-    grid-area: photo3;
-}
-.photo4 {
-    grid-area: photo4;
-}
-.photo5 {
-    grid-area: photo5;
-}
-.photo6 {
-    grid-area: photo6;
-}
+
 .activist_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
 }
+
 .activist_info ul {
     margin: 0;
+    padding: 0;
 }
+
 .activist_info li:first-child {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
+
 h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     text-transform: uppercase;
     text-align: center;
     background: black;
 }
+
 .item a {
     color: blue;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 5px 0;
 }   
 
 .item a:hover {
     color: yellow;
 }
-  /*Responsive design*/    
-@media all and (min-width:835px) {
+
+/* Tablet breakpoint */
+@media all and (min-width: 768px) {
+    .container {
+        margin-top: 100px;
+    }
+    
+    .photo1,
+    .photo2,
+    .photo3,
+    .photo4,
+    .photo5,
+    .photo6 {
+        flex-direction: row;
+        text-align: left;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .activist_image {
+        width: 180px;
+        margin-bottom: 0;
+    }
+    
+    .activist_info li:first-child {
+        font-size: 20px;
+    }
+    
+    .item a {
+        font-size: 18px;
+    }
+}
+
+/* Desktop breakpoint */
+@media all and (min-width: 1024px) {
     .container {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         'photo1 photo2'
         'photo3 photo4'
         'photo5 photo6'
-        'footer footer'
+        'footer footer';
     }
-}
-@media all and (min-width:750px) {
-    .container {
-        margin-top: 120px;
+    
+    .activist_image {
+        width: 200px;
+    }
+    
+    .item a {
+        font-size: 20px;
     }
 }
 
