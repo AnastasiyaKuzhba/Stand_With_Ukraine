@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     allImages.forEach(img => {
         img.addEventListener('error', function() {
             console.error('Failed to load image:', this.src);
+            console.error('Image path:', this.src);
+            console.error('Image element:', this);
             this.style.border = '2px solid red';
             this.alt = 'Failed to load image';
         });
@@ -125,6 +127,20 @@ document.addEventListener('DOMContentLoaded', function() {
         img.alt = `Gallery Image ${index}`;
         img.loading = 'lazy';
         
+        // Add error handling for each gallery image
+        img.addEventListener('error', function() {
+            console.error('Failed to load gallery image:', this.src);
+            console.error('Image path:', this.src);
+            console.error('Image element:', this);
+            this.style.border = '2px solid red';
+            this.alt = 'Failed to load image';
+        });
+        
+        img.addEventListener('load', function() {
+            console.log('Successfully loaded gallery image:', this.src);
+            this.classList.add('loaded');
+        });
+        
         const caption = document.createElement('div');
         caption.className = 'caption';
         caption.textContent = `Gallery Image ${index}`;
@@ -171,7 +187,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Load images for current page
         for (let i = startIndex; i < Math.min(endIndex, availableImages.length); i++) {
-            const imagePath = `Images/Gallery_Page_Images/${availableImages[i - 1]}`;
+            const imagePath = `images/Gallery_Page_Images/${availableImages[i - 1]}`;
+            console.log('Attempting to load image:', imagePath);
             const galleryItem = createGalleryItem(imagePath, i);
             galleryContainer.appendChild(galleryItem);
         }
