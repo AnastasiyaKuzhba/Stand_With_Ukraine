@@ -160,8 +160,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Array of available images
         const availableImages = [
-            'image.11.jpg', 'image.12.png', 'image.13.jpg', 'image.14.png',
-            'image.15.png', 'image.16.jpg', 'image.17.png', 'image.18.jpg',
+            'image.72.jpg', 'image.12.png', 'image.13.jpg', 'image.14.png',
+            'image.15.png', 'image.16.jpg', 'image.17.jpg', 'image.18.jpg',
             'image.19.jpeg', 'image.20.png', 'image.21.jpg', 'image.22.jpg',
             'image.23.webp', 'image.24.jpg', 'image.25.jpg', 'image.26.jpg', 
             'image.27.jpg', 'image.28.jpg', 'image.29.jpg', 'image.30.jpg', 
