@@ -161,21 +161,21 @@ document.addEventListener('DOMContentLoaded', function() {
         // Array of available images
         const availableImages = [
             'image.11.jpg', 'image.12.png', 'image.13.jpg', 'image.14.png',
-            'image.15.png', 'image.16.png', 'image.17.png', 'image.18.jpg',
+            'image.15.png', 'image.16.jpg', 'image.17.png', 'image.18.jpg',
             'image.19.jpeg', 'image.20.png', 'image.21.jpg', 'image.22.jpg',
-            'image.23.webp', 'image.25.jpg', 'image.26.jpg', 'image.26.1.png',
-            'image.28.jpg', 'image.29.jpg', 'image.30.jpg', 'image.32.jpg',
-            'image.34.jpg', 'image.35.jpg', 'image.36.jpg', 'image.37.jpg',
-            'image.38.jpg', 'image.39.jpg', 'image.40.jpg', 'image.41.jpg',
-            'image.42.webp', 'image.43.jpg', 'image.44.jpg', 'image.45.jpg',
-            'image.46.jpg', 'image.47.jpg', 'image.48.jpg', 'image.49.jpg',
-            'image.50.jpg', 'image.51.jpg', 'image.52.png', 'image.53.jpg',
-            'image.54.jpg', 'image.55.jpg', 'image.56.jpg', 'image.57.jpeg',
-            'image.58.jpg', 'image.59.jpg', 'image.60.jpg', 'image.61.jpg',
-            'image.62.jpg', 'image.63.avif', 'image.64.png', 'image.65.jpg',
+            'image.23.webp', 'image.24.jpg', 'image.25.jpg', 'image.26.jpg', 
+            'image.27.jpg', 'image.28.jpg', 'image.29.jpg', 'image.30.jpg', 
+            'image.32.jpg', 'image.33.jpg', 'image.34.jpg', 'image.35.jpg',
+            'image.36.jpg', 'image.37.jpg', 'image.38.jpg', 'image.39.jpg',
+            'image.40.jpg', 'image.41.jpg', 'image.42.webp', 'image.43.jpg',
+            'image.44.jpg', 'image.45.jpg', 'image.46.jpg', 'image.47.jpg',
+            'image.48.jpg', 'image.49.jpg', 'image.50.jpg', 'image.51.jpg',
+            'image.52.png', 'image.53.jpg', 'image.54.jpg', 'image.55.jpg',
+            'image.56.jpg', 'image.57.jpeg', 'image.58.jpg', 'image.59.jpg',
+            'image.60.jpg', 'image.61.jpg', 'image.62.jpg', 'image.63.jpg',
+            'image.64.jpg', 'image.65.jpg', 'image.66.jpg', 'image.67.jpg',
             'image.68.jpg', 'image.69.jpg', 'image.70.jpg', 'image.71.jpg',
-            'image.72.jpg', 'image.73.jpg', 'image.74.jpg', 'image.76.jpg',
-            'image.77.jpg', 'image.78.jpg'
+            'image.72.jpg', 'image.73.jpg', 'image.74.jpg', 'image.75.jpg',
         ];
 
         // Check if we have more images to load
