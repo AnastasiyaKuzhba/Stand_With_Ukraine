@@ -175,7 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
             'image.60.jpg', 'image.61.jpg', 'image.62.jpg', 'image.63.jpg',
             'image.64.jpg', 'image.65.jpg', 'image.66.jpg', 'image.67.jpg',
             'image.68.jpg', 'image.69.jpg', 'image.70.jpg', 'image.71.jpg',
-            'image.72.jpg', 'image.73.jpg', 'image.74.jpg', 'image.75.jpg',
         ];
 
         // Check if we have more images to load
