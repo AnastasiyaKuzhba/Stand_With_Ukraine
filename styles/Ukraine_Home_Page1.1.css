@@ -4,10 +4,11 @@
 }
 /* Mobile-first base styles */
 .container {
-    margin-top: 80px;
+    margin-top: 60px;
+    padding: 0 0.5rem 0 0.5rem;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 20px;
     background: darkgrey;
     grid-template-areas:
     'main'
