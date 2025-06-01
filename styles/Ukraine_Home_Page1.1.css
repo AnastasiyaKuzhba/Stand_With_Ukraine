@@ -2,10 +2,18 @@
     box-sizing: border-box;
     list-style-type: none;
 }
+
+/*Delets margin and padding from body*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* Mobile-first base styles */
 .container {
     margin-top: 60px;
-    padding: 0 0.5rem 0 0.5rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -21,7 +29,9 @@
     border: 1px solid black;
 }
 .main {
-    grid-area: main;   
+    grid-area: main;  
+    margin-left: 1rem; 
+    margin-right: 1rem;
 }
 .column1,.column2 {
     gap: 10px;
@@ -32,9 +42,13 @@
 }
 .column1 {
     grid-area: column1;
+    margin-left: 1rem; 
+    margin-right: 1rem;
 }
 .column2 {
     grid-area: column2;
+    margin-left: 1rem; 
+    margin-right: 1rem;
 }
 .column1 ul, .column2 ul {
     padding: 0;
@@ -150,7 +164,6 @@ h3 {
     color: white;
     text-transform: uppercase;
     text-align: center;
-    background: black;
 }
 span {
     font-weight: bold;
@@ -168,6 +181,8 @@ span {
     background: rgba(0, 0, 0, 0.8);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem; 
+    margin-right: 1rem;
 }
 
 .timer-title {
@@ -276,7 +291,17 @@ span {
     .column1,.column2 {
         font-size: 20px;
     }
+
+    .column1 {
+        grid-area: column1;
+        margin-right: 0.1rem;
+    }
+    .column2 {
+        grid-area: column2;
+        margin-left: 0.1rem;
+    }
     
+
     .js-accordion-trigger {
         font-size: 20px;
     }
