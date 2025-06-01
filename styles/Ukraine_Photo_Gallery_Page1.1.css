@@ -1,30 +1,45 @@
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .container {
-    margin-top: 80px;
+    margin-top: 60px;
     display: grid;
     grid-template-areas:
-    'carousel'
     'gallery'
     'footer';
-    gap: 2rem;
-    padding: 1rem;
+    gap: 20px;
+    grid-template-rows: 1fr auto;
+}
+
+.item {
+    border: 1px solid black;
 }
 
 /* Carousel Styles */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .carousel-container {
-    grid-area: carousel;
     position: relative;
     width: 100vw;
     height: 500px;
     overflow: hidden;
     background: black;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 60px;
 }
 
 .carousel {
@@ -104,7 +119,8 @@
 .gallery-container {
     grid-area: gallery;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+    min-height: 0; /*Prevents grid from expanding beyond content*/
 }
 
 .masonry-gallery {
@@ -159,8 +175,6 @@ h3 {
     text-align: center;
 }
 
-
-*/
 /* Remove loading animation */
 @keyframes shimmer {
     0% {
@@ -194,12 +208,16 @@ h3 {
 @media (min-width: 1024px) {
     .masonry-gallery {
         columns: 3;
+        column-gap: 1.25rem;
     }
 }
 
 @media (min-width: 1440px) {
     .masonry-gallery {
         columns: 4;
+    }
+    .carousel-container {
+        margin-top: 90px;
     }
 }
 
@@ -213,3 +231,8 @@ h3 {
         font-size: 16px;
     }
 } 
+
+.footer {
+    grid-area: footer;
+    padding-bottom: 5px;
+}
