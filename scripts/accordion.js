@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `;
         }
+
         // Add specific content for Abkhazia item    
         else if (item.textContent.includes('Abkhazia')) {
             content.innerHTML = `
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `;
         }
+
         // Add specific content for First Chechen War item    
         else if (item.textContent.includes('First Chechen War')) {
             content.innerHTML = `
@@ -50,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `;
         }
+
         // Add specific content for Second Chechen War item    
         else if (item.textContent.includes('Second Chechen War')) {
             content.innerHTML = `
@@ -63,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `;
         }
+
         // Add specific content for Georgian War item    
         else if (item.textContent.includes('Georgian War')) {
             content.innerHTML = `
@@ -78,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `;
         }
+
          // Add specific content for Syria War item    
         else if (item.textContent.includes('Syria')) {
             content.innerHTML = `
@@ -96,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `;
         }
+
         // Add specific content for Invasion to Ukraine item    
         else if (item.textContent.includes('Invasion to Ukraine')) {
             content.innerHTML = `
@@ -112,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `;
         }
+
         // Add specific content for February 26-27, 2014 item
         else if (item.textContent.includes('February 26-27, 2014')) {
             content.innerHTML = `
@@ -125,6 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `;
         }
+
         // Add specific content for March 18, 2014 item
         else if (item.textContent.includes('March 18, 2014')) {
             content.innerHTML = `
@@ -139,6 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `;
         }
+
         // Add specific content for April 2014 item
         else if (item.textContent.includes('April 2014')) {
             content.innerHTML = `
@@ -153,6 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `;
         }
+        
         // Add specific content for February 24, 2022 item
         else if (item.textContent.includes('February 24, 2022')) {
             content.innerHTML = `
