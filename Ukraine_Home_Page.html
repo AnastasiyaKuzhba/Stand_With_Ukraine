@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>War in Ukraine</title>
+    <link rel="stylesheet" href="styles/Ukraine_Home_Page.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <script src="scripts/timer.js" defer></script>
+    <script src="scripts/accordion.js" defer></script>
+</head>
+<body>
+    <!-- Navigation bar using Flex -->
+    <header>
+        <a href="Ukraine_Home_Page.html">
+            <img 
+              src="images\Emblem_of_Ukraine.jpg" 
+              alt="Emblem of Ukraine" 
+              height="70" 
+              width="130" >
+        </a>
+        <ul>
+            <li><a href="Ukraine_Photo_Gallery_Page.html">Photos</a></li>
+            <!-- <li><a href="#">Videos</a></li> -->
+            <li><a href="Ukraine_Activists_Page.html">Activists</a></li>
+            <li><a href="Ukraine_Donate_Page.html">Donate</a></li>
+        </ul> 
+    </header>  
+    <!-- Starts a grid container with main picture, 2 columns of text -->
+    <div class="container">
+        <div class="item main">
+            <div class="bg-image">
+                <div class="flex-container"> <!-- Main image as grid container and slogans as flex containers inside grid container -->
+                    <div class="item slogan1">Stand with Ukraine!</div>
+                    <div class="item slogan2">Stop War. Stop Russia.</div>
+                </div>
+            </div> 
+        </div>
+        <div class=" item text-media"> <!-- Added -->
+            <h1>Ukraine's Struggle for Sovereignty: A Nation Resists Full-Scale Aggression.</h1>
+            <img 
+              src="images\Home_Page\Ukraine_War_Map.png" 
+              alt="Ukraine War Map">
+            <p>The conflict in Ukraine, a nation asserting its sovereign right to self-determination, represents a profound challenge to international peace and security. What began in February 2014 with the illegal annexation of Crimea and the instigation of hostilities in Donbas, escalated dramatically into a full-scale invasion by the Russian Federation on February 24, 2022. This unprovoked aggression, launched by Russia with the stated aim of seizing control of Ukraine and imposing an alternative government, has since unleashed widespread destruction across the country. The ongoing hostilities have tragically resulted in the deaths of thousands of civilians and military personnel, leaving an indelible mark on the nation's fabric.</p>
+            <p>Beyond the immediate battlefields, the war has triggered a severe humanitarian catastrophe of unprecedented scale. Millions of Ukrainian citizens have been forcibly displaced from their homes, seeking refuge both internally and across international borders, as entire cities and vital infrastructure have been systematically targeted and destroyed. This displacement has placed immense strain on resources and relief efforts, underscoring the urgent need for sustained international support to alleviate the suffering of the Ukrainian people and address the multifaceted consequences of this devastating conflict. Ukraine continues to defend its territorial integrity and independence with unwavering resolve.</p>
+        </div>
+        <div id="war-timer" class="item">
+            <h3 class="timer-title">War lasts for</h3>
+        </div>
+        <div class="item column1">
+            <h2>The War that lasts 11 years.<br>
+                3 years of full-scaled war.
+            </h2>
+            <ul>
+                <li class="js-accordion-trigger"><span>February 26-27, 2014</span> - On the night of February 26-27, Russian special forces seized and blocked the Supreme Soviet of Crimea and the Council of Ministers of Crimea.</li>
+                <li class="js-accordion-trigger"><span>March 18, 2014</span> - Crimea was annexed by Russia.</li>
+                <li class="js-accordion-trigger"><span>April 2014</span> - Began the covert invasion of regular units of the Armed Forces of the Russian Federation into the territory of Ukraine without a declaration of war.</li>
+                <li class="js-accordion-trigger"><span>February 24, 2022</span> - Full-scale invasion of Russian troops on the territory of Ukraine and bombing its entire territory.</li>
+            </ul>    
+        </div>
+        <div class="item column2">
+            <ul>
+                <h2>Over the past 30 years, Russia has taken part in seven wars</h2>
+                <li class="js-accordion-trigger"><span>1992-1993</span> - Occupation of Transnistria in Moldova.</li>
+                <li class="js-accordion-trigger"><span>1992-1993</span> - Abkhazia War.</li>
+                <li class="js-accordion-trigger"><span>1994-1996</span> - First Chechen War.</li>
+                <li class="js-accordion-trigger"><span>1999-2009</span> - Second Chechen War.</li>
+                <li class="js-accordion-trigger"><span>2008</span> - Georgian War.</li>
+                <li class="js-accordion-trigger"><span>2015-2022</span> - War in Syria.</li>
+                <li class="js-accordion-trigger"><span>2014</span> - Invasion to Ukraine.</li>
+            </ul>
+        </div>
+        <div class="item footer">
+             <h3>Kuzhba Anastasiia</h3> 
+             <!-- For the future:
+             <div class="footer-content"> 
+                <p>&copy; 2025 Main Unternehmen. Alle Rechte vorbehalten</p>
+                <nav>
+                    <a href="/impressum.html">Impressum</a>
+                    <a href="/datenschutz.html">Datenschutz</a>
+                </nav>
+                <p>You can find me:</p>
+                <a href="https://www.linkedin.com/in/anastasiya-kuzhba/">LinkedIn</a>
+                  <img
+                    src="images\Social_Media\linkedin.webp"
+                    alt="LinkedIn">
+                </a>
+             </div>
+            -->
+        </div>
+    </div>
+</body>
+</html>

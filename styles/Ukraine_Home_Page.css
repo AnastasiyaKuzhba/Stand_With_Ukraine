@@ -3,7 +3,7 @@
     list-style-type: none;
 }
 
-/*Delets margin and padding from body*/
+/* Deletes margin and padding from body */
 body {
     margin: 0;
     padding: 0;
@@ -20,48 +20,57 @@ body {
     background: darkgrey;
     grid-template-areas:
     'main'
+    'text-media'
     'timer'
     'column1'
     'column2'
-    'footer'
+    'footer';
 }
+
 .item {
     border: 1px solid black;
 }
+
 .main {
     grid-area: main;  
     margin-left: 1rem; 
     margin-right: 1rem;
 }
-.column1,.column2 {
+.column1,
+.column2 {
     gap: 10px;
     padding: 20px;
     background: rgb(220, 218, 218); 
     font-size: 16px;  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
+
 .column1 {
     grid-area: column1;
     margin-left: 1rem; 
     margin-right: 1rem;
 }
+
 .column2 {
     grid-area: column2;
     margin-left: 1rem; 
     margin-right: 1rem;
 }
-.column1 ul, .column2 ul {
+.column1 ul, 
+.column2 ul {
     padding: 0;
     margin: 0;
 }
+
 .bg-image {
-    background-image: url("../images/Home_Page/Destroyed_house_ewvp8r_c_scale_w_1400.jpg");
+    background-image: url("../images/Home_Page/Destroyed_house.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
 }
-/* starts flex container that consists of slogans*/
+
+/* Starts flex container that consists of slogans */
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -69,25 +78,57 @@ body {
     align-items: center;
     height: 100%;
 }
-.slogan1,.slogan2 {
+
+.slogan1,
+.slogan2 {
     text-align: center;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: fit-content;
 }
+
 .slogan1 {
-    background: blue;
+    background: #107de6;  /*Changed*/
     font-size: 30px;
-    color: yellow;
+    color: #ffee0e; /*Changed*/
     margin-top: 80px;
-    padding: 8px;
+    padding: 8px 20px; /*Changed*/
+    border: unset;  /*Added*/
 }
+
 .slogan2 {
-    background: black;
+    background: #393e46;  /*Changed*/
     font-size: 24px;
-    color: red;
-    margin-top: 60px;
+    color: #cd3033; /*Changed*/
+    margin-top: 15px; /*Changed from 60px to 15px*/
     padding: 15px;
+}
+
+.text-media {
+	grid-area: text-media;
+	gap: 10px;
+	padding: 20px 20px 40px;
+	background: rgb(220, 218, 218);
+	color: white;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.text-media h1 {
+	color: black;
+	text-align: center;
+}
+
+.text-media p {
+	color: black;
+	margin-bottom: 0;
+}
+
+.text-media img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .js-accordion-trigger {
@@ -127,7 +168,7 @@ body {
 .accordion-content {
     padding: 0 15px;
     background-color: rgba(255, 255, 255, 0.9);
-    border-left: 3px solid red;
+    border-left: 3px solid #cd3033;  /*Changed*/
     margin-left: 15px;
 }
 
@@ -157,7 +198,8 @@ h2 {
     color: black;
     text-transform: uppercase;
     text-align: center; 
-}     
+} 
+
 h3 {
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -165,11 +207,13 @@ h3 {
     text-transform: uppercase;
     text-align: center;
 }
+
 span {
     font-weight: bold;
     font-style: italic;
-    color: red;
+    color: #cd3033;  /*Changed*/
 }
+
 /* Timer styles */
 #war-timer {
     grid-area: timer;
@@ -178,7 +222,7 @@ span {
     align-items: center;
     gap: 10px;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.8);
+    background: #393e46;  /*Changed*/
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 1rem; 
@@ -186,9 +230,9 @@ span {
 }
 
 .timer-title {
-    color: white;
+    color: rgb(222, 216, 216);  /*Changed*/
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-transform: none;
 }
 
@@ -207,7 +251,7 @@ span {
 .timer-value {
     font-size: 1.5em;
     font-weight: bold;
-    color: #ff0000;
+    color: #cd3033;  /*Changed*/
     display: block;
 }
 
@@ -236,8 +280,15 @@ span {
         font-size: 32px;
         margin-top: 90px;
     }
+
+    .text-media img {
+        float:left;
+        margin-right: 20px;
+        padding-bottom: 20px;
+    }
     
-    .column1,.column2 {
+    .column1,
+    .column2 {
         font-size: 18px;
     }
     
@@ -265,10 +316,11 @@ span {
 /* Desktop breakpoint */
 @media all and (min-width: 1024px) {
     .container {
-        margin-top: 110px;
+        margin-top: 115px; /*Changed from 110px to 115px*/
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "main main"
+        "text-media text-media"
         "timer timer"
         "column1 column2"
         "footer footer";
@@ -280,15 +332,26 @@ span {
     
     .slogan1 {
         font-size: 50px;
-        margin-top: 160px;
+        margin-top: 0; /*Changed from 160px to 0px*/
     }
     
     .slogan2 {
         font-size: 40px;
-        margin-top: 120px;
+        margin-top: 50px; /*Changed from 120px to 50px*/
+    }
+
+    .text-media p {
+        font-size: 18px;
+    }
+
+    .text-media img {
+        float:left;
+        margin-right: 20px;
+        width: 270px;
     }
     
-    .column1,.column2 {
+    .column1,
+    .column2 {
         font-size: 20px;
     }
 
@@ -296,12 +359,12 @@ span {
         grid-area: column1;
         margin-right: 0.1rem;
     }
+
     .column2 {
         grid-area: column2;
         margin-left: 0.1rem;
     }
     
-
     .js-accordion-trigger {
         font-size: 20px;
     }
