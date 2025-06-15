@@ -1,17 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const timelineItems = document.querySelectorAll('.js-accordion-trigger');
-    
-    timelineItems.forEach(item => {
-        // Create accordion content div
-        const content = document.createElement('div');
-        content.className = 'accordion-content';
-        content.style.maxHeight = '0';
-        content.style.overflow = 'hidden';
-        content.style.transition = 'max-height 0.3s ease-out';
-        
-        // Add specific content for Transnistria item
-        if (item.textContent.includes('Transnistria')) {
-            content.innerHTML = `
+document.addEventListener('DOMContentLoaded', function () {
+  const timelineItems = document.querySelectorAll('.js-accordion-trigger');
+
+  timelineItems.forEach(item => {
+    // Create accordion content div
+    const content = document.createElement('div');
+    content.className = 'accordion-content';
+    content.style.maxHeight = '0';
+    content.style.overflow = 'hidden';
+    content.style.transition = 'max-height 0.3s ease-out';
+
+    // Add specific content for Transnistria item
+    if (item.textContent.includes('Transnistria')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li><b>The Transnistria War</b> was an armed conflict that took place primarily <b>in 1992</b> between the newly independent Republic of Moldova and separatist forces <b>supported by Russian Federation</b> in the region of Transnistria.</li>
                     <li>The conflict began after <b>Moldova declared independence from the Soviet Union in 1991</b>, prompting pro-Russian separatists in Transnistria to seek autonomy and later de facto independence.</li>
@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li>Despite the ceasefire, <b>Russian troops have remained stationed in Transnistria</b>, which has been a point of tension between Russia and Moldova.</li>
                 </ul>
             `;
-        }
+    }
 
-        // Add specific content for Abkhazia item    
-        else if (item.textContent.includes('Abkhazia')) {
-            content.innerHTML = `
+    // Add specific content for Abkhazia item    
+    else if (item.textContent.includes('Abkhazia')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li>The Abkhaz–Georgian conflict broke out in <b>August 1992</b>, shortly after the collapse of the Soviet Union, during a period of geopolitical instability and shifting power dynamics in the Caucasus region.</li>
                     <li>One of the underlying causes was the <b>Russian Federation's interest in preserving influence over Georgia</b>, a newly independent state seeking to consolidate its sovereignty and move away from Moscow's sphere of control.</li>
@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li>The war led to a major humanitarian crisis, with over 200,000 ethnic Georgians displaced and thousands of civilians killed. A <b>ceasefire was signed in 1994, but Abkhazia has remained a de facto breakaway region</b>, recognized by only a few states and continuing to be a major point of tension in Georgian-Russian relations.</li>
                 </ul>
             `;
-        }
+    }
 
-        // Add specific content for First Chechen War item    
-        else if (item.textContent.includes('First Chechen War')) {
-            content.innerHTML = `
+    // Add specific content for First Chechen War item    
+    else if (item.textContent.includes('First Chechen War')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li><b>The First Chechen War began in December 1994, when Russian federal forces launched a military operation</b> to prevent the Chechen Republic of Ichkeria from becoming independent.</li>
                     <li>After the collapse of the Soviet Union, Chechnya declared independence in 1991 under the <b>leadership of Dzhokhar Dudayev</b>, a move supported by many Chechens seeking self-determination.</li>
@@ -51,11 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li><b>The war ended in 1996</b> with a ceasefire agreement (the Khasavyurt Accord), effectively ending Russian military operations and <b>leaving Chechnya with de facto independence until the Second Chechen War began in 1999.</b></li>
                 </ul>
             `;
-        }
+    }
 
-        // Add specific content for Second Chechen War item    
-        else if (item.textContent.includes('Second Chechen War')) {
-            content.innerHTML = `
+    // Add specific content for Second Chechen War item    
+    else if (item.textContent.includes('Second Chechen War')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li><b>Chechnya had declared independence in 1991</b> as the Chechen Republic of Ichkeria, and after the First Chechen War ended in 1996, it operated autonomously, without formal Russian control.</li>
                     <li>The <b>Russian government never recognized Chechnya’s independence</b> and saw its separatist movement as a threat to the territorial integrity of the Russian Federation.</li>
@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li>The war was not just a counter-terrorist operation but also a <b>political move to re-establish central control over a breakaway republic</b> and to bolster Vladimir Putin’s rising political profile, which gained momentum during the conflict.</li>
                 </ul>
             `;
-        }
+    }
 
-        // Add specific content for Georgian War item    
-        else if (item.textContent.includes('Georgian War')) {
-            content.innerHTML = `
+    // Add specific content for Georgian War item    
+    else if (item.textContent.includes('Georgian War')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li>The <b>Russo-Georgian War broke out in August 2008</b> after escalating tensions between Georgia and separatists in South Ossetia, a breakaway region supported by Russia.</li>
                     <li>The conflict began when Georgian forces attempted to regain control over South Ossetia, <b>prompting a large-scale Russian military response</b>.</li>
@@ -81,11 +81,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li>The war was not just a counter-terrorist operation but also a <b>political move to re-establish central control over a breakaway republic</b> and to bolster Vladimir Putin’s rising political profile, which gained momentum during the conflict.</li>
                 </ul>
             `;
-        }
+    }
 
-         // Add specific content for Syria War item    
-        else if (item.textContent.includes('Syria')) {
-            content.innerHTML = `
+    // Add specific content for Syria War item    
+    else if (item.textContent.includes('Syria')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li> <b>Russia’s involvement in the Syrian Civil War began in September 2015</b>, when Moscow launched a military intervention to support the government of <b>Bashar al-Assad</b>.</li>
                     <li> Russia claimed its goal was to fight terrorism, but much of its military activity targeted opposition groups challenging Assad’s rule.</li>
@@ -100,11 +100,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li></li>
                 </ul>
             `;
-        }
+    }
 
-        // Add specific content for Invasion to Ukraine item    
-        else if (item.textContent.includes('Invasion to Ukraine')) {
-            content.innerHTML = `
+    // Add specific content for Invasion to Ukraine item    
+    else if (item.textContent.includes('Invasion to Ukraine')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li>The conflict began in <b>early 2014, when Russia annexed Ukraine’s Crimean Peninsula</b> following the Euromaidan revolution and the ousting of pro-Russian President Viktor Yanukovych.</li>
                     <li>Soon after, <b>Russian forces covertly entered Ukraine’s eastern Donetsk and Luhansk regions</b>, backing separatist militants and fueling an armed conflict that killed thousands and displaced over a <b>million people.</b></li>
@@ -117,11 +117,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li> The <b>war continues into 2025</b>, with no full resolution in sight, amid ongoing battles, war crimes investigations, and global repercussions for security and energy stability. <b>Ukraine continue to fight for its freedom and independence.</b></li>
                 </ul>
             `;
-        }
+    }
 
-        // Add specific content for February 26-27, 2014 item
-        else if (item.textContent.includes('February 26-27, 2014')) {
-            content.innerHTML = `
+    // Add specific content for February 26-27, 2014 item
+    else if (item.textContent.includes('February 26-27, 2014')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li><b>On the night of February 26–27, 2014, unidentified armed men in military uniforms without insignia — later confirmed to be Russian special forces — seized and occupied key government buildings in Simferopol, the capital of Crimea.</b> These included the <b>Supreme Council of Crimea (the regional parliament)</b> and the <b>Council of Ministers (executive branch).</b> </li>
                     <li>The seizure occurred just hours <b>after pro-Ukrainian and pro-Russian rallies clashed outside the parliament building on February 26</b>, during which at least two people were killed and dozens injured.</li>
@@ -131,11 +131,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li>The operation laid the groundwork for a <b>rapid and illegal annexation of Crimea by the Russian Federation</b>, culminating in the controversial <b>referendum on March 16, 2014</b>, widely considered illegitimate by Ukraine and most of the international community.</li>
                 </ul>
             `;
-        }
+    }
 
-        // Add specific content for March 18, 2014 item
-        else if (item.textContent.includes('March 18, 2014')) {
-            content.innerHTML = `
+    // Add specific content for March 18, 2014 item
+    else if (item.textContent.includes('March 18, 2014')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li><b>On March 18, 2014, the Russian Federation formally annexed Crimea</b>, following a disputed referendum held just two days earlier, on <b>March 16, under conditions of Russian military occupation.</b></li>
                     <li>The <b>referendum claimed overwhelming support (over 95%)</b> for joining Russia, but it was conducted <b>without international observers</b>, under <b>military pressure</b>, and in violation of <b>Ukrainian and international law</b>. Many residents, particularly <b>ethnic Ukrainians and Crimean Tatars, boycotted the vote.</b></li>
@@ -146,11 +146,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li>Since <b>2014, Crimea</b> has remained <b>under Russian control</b>, but is <b>internationally recognized as part of Ukraine</b>, and the annexation continues to be a central issue in the broader conflict between Russia and Ukraine.</li>
                 </ul>
             `;
-        }
+    }
 
-        // Add specific content for April 2014 item
-        else if (item.textContent.includes('April 2014')) {
-            content.innerHTML = `
+    // Add specific content for April 2014 item
+    else if (item.textContent.includes('April 2014')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li>In <b>April 2014</b>, shortly after the annexation of Crimea, armed <b>pro-Russian groups</b> began seizing government buildings in <b>Donetsk, Luhansk, and other cities in eastern Ukraine</b>, marking the beginning of an organized separatist uprising.</li>
                     <li>Though initially framed as a local movement, mounting <b>evidence confirmed the involvement of Russian special forces, intelligence operatives (GRU), and military advisors</b>, who coordinated and supported the seizure of Ukrainian territory without formally declaring war.</li>
@@ -161,11 +161,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li> Despite repeated denials from the Kremlin, <b>international organizations, journalists, and NGOs have extensively documented Russia's covert military involvement</b>, classifying it as an undeclared hybrid war against Ukraine.</li>
                 </ul>
             `;
-        }
-        
-        // Add specific content for February 24, 2022 item
-        else if (item.textContent.includes('February 24, 2022')) {
-            content.innerHTML = `
+    }
+
+    // Add specific content for February 24, 2022 item
+    else if (item.textContent.includes('February 24, 2022')) {
+      content.innerHTML = `
                 <ul class="accordion-details">
                     <li>On <b>February 24, 2022, Russia launched a full-scale invasion of Ukraine</b> from multiple directions — including from <b>Russia, Crimea (illegally annexed in 2014), and Belarus</b> — marking the largest military attack in Europe since <b>World War II.</b></li>
                     <li> In a televised address shortly before the attack, <b>Vladimir Putin</b> announced a so-called <b>"special military operation"</b> aimed at the <b>"demilitarization and denazification"</b> of Ukraine — a justification widely dismissed by the international community as <b>propaganda without factual basis.</b></li>
@@ -181,19 +181,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li>By early <b>2025</b>, the conflict remained <b>unresolved</b>, with neither side achieving a decisive advantage. Diplomatic efforts saw mixed results. While Ukrainian President <b>Volodymyr Zelenskyy</b> expressed openness to a <b>ceasefire</b>, Russia's stance remained aggressive, with President <b>Vladimir Putin</b> rejecting U.S.-led ceasefire proposals and keeping the option of <b>nuclear weapons use</b> on the table, though he stated there was no current need for them.</li>
                 </ul>
             `;
-        }
+    }
 
-        // Only add accordion functionality if content was found
-        if (content.innerHTML) {
-            // Insert content after the timeline item
-            item.parentNode.insertBefore(content, item.nextSibling);
-            
-            // Add click event to toggle accordion
-            item.addEventListener('click', function() {
-                const isOpen = content.style.maxHeight !== '0px';
-                content.style.maxHeight = isOpen ? '0' : content.scrollHeight + 'px';
-                item.classList.toggle('active', !isOpen);
-            });
-        }
-    });
+    // Only add accordion functionality if content was found
+    if (content.innerHTML) {
+      // Insert content after the timeline item
+      item.parentNode.insertBefore(content, item.nextSibling);
+
+      // Add click event to toggle accordion
+      item.addEventListener('click', function () {
+        const isOpen = content.style.maxHeight !== '0px';
+        content.style.maxHeight = isOpen ? '0' : content.scrollHeight + 'px';
+        item.classList.toggle('active', !isOpen);
+      });
+    }
+  });
 }); 
