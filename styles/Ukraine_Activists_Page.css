@@ -1,47 +1,47 @@
 * {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	box-sizing: border-box;
-	list-style-type: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  list-style-type: none;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Mobile-first base styles */
 .container {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 20px;
-	margin-top: 90px;
-	grid-template-areas:
-		"text-media"
-		"photo1"
-		"photo2"
-		"photo3"
-		"photo4"
-		"photo5"
-		"photo6"
-		"footer";
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 90px;
+  grid-template-areas:
+    "text-media"
+    "photo1"
+    "photo2"
+    "photo3"
+    "photo4"
+    "photo5"
+    "photo6"
+    "footer";
 }
 
 .item {
-	border-radius: 8px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .text-media {
-	grid-area: text-media;
-	gap: 10px;
-	padding: 20px 20px 40px;
-	background: rgb(220, 218, 218);
-	color: white;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	margin-left: 1rem;
-	margin-right: 1rem;
+  grid-area: text-media;
+  gap: 10px;
+  padding: 20px 20px 40px;
+  background: rgb(220, 218, 218);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .photo1,
@@ -50,205 +50,210 @@ body {
 .photo4,
 .photo5,
 .photo6 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	gap: 15px;
-	background: rgb(220, 218, 218);
-	padding: 15px;
-	margin-left: 1rem;
-	margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  background: rgb(220, 218, 218);
+  padding: 15px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .photo1 {
-	grid-area: photo1;
+  grid-area: photo1;
 }
+
 .photo2 {
-	grid-area: photo2;
+  grid-area: photo2;
 }
+
 .photo3 {
-	grid-area: photo3;
+  grid-area: photo3;
 }
+
 .photo4 {
-	grid-area: photo4;
+  grid-area: photo4;
 }
+
 .photo5 {
-	grid-area: photo5;
+  grid-area: photo5;
 }
+
 .photo6 {
-	grid-area: photo6;
+  grid-area: photo6;
 }
 
 .activist_image {
-	width: 150px;
-	height: auto;
-	margin-bottom: 10px;
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .activist_info {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .activist_info ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .activist_info p {
-	text-transform: uppercase;
-	margin-top: 0;
-	font-weight: 500;
-	margin-bottom: 5px;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 h3 {
-	font-size: 18px;
-	color: white;
-	text-transform: uppercase;
-	text-align: center;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .item a {
-	color: #107de6;
-	font-size: 16px;
-	padding: 5px 0;
+  color: #107de6;
+  font-size: 16px;
+  padding: 5px 0;
 }
 
 .item a:hover {
-	color: #ffee0e;
+  color: #ffee0e;
 }
 
 .item img {
-	width: 200px;
-	height: 150px;
-	object-fit: cover;
-	object-position: center;
-	border-radius: 8px;
-	margin: 0.5rem;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  margin: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .activist_image {
-	width: 180px;
-	margin-bottom: 0;
+  width: 180px;
+  margin-bottom: 0;
 }
 
 .facebook {
-	background-image: url("../images/Social_Media/facebook.svg");
-	background-repeat: no-repeat;
-	background-position: left 7px;
-	background-size: 20px 20px;
+  background-image: url("../images/Social_Media/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: left 7px;
+  background-size: 20px 20px;
 }
 
 .facebook:hover {
-	background-image: url("../images/Social_Media/facebook_yellow.svg");
+  background-image: url("../images/Social_Media/facebook_yellow.svg");
 }
 
 .instagram {
-	background-image: url("../images/Social_Media/instagram.svg");
-	background-repeat: no-repeat;
-	background-position: left 7px;
-	background-size: 20px 20px;
+  background-image: url("../images/Social_Media/instagram.svg");
+  background-repeat: no-repeat;
+  background-position: left 7px;
+  background-size: 20px 20px;
 }
 
 .instagram:hover {
-	background-image: url("../images/Social_Media/instagram_yellow.svg");
+  background-image: url("../images/Social_Media/instagram_yellow.svg");
 }
 
 .telegram {
-	background-image: url("../images/Social_Media/telegram.svg");
-	background-repeat: no-repeat;
-	background-position: left 7px;
-	background-size: 20px 20px;
+  background-image: url("../images/Social_Media/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: left 7px;
+  background-size: 20px 20px;
 }
 
 .telegram:hover {
-	background-image: url("../images/Social_Media/telegram_yellow.svg");
+  background-image: url("../images/Social_Media/telegram_yellow.svg");
 }
 
 .youtube {
-	background-image: url("../images/Social_Media/youtube.svg");
-	background-repeat: no-repeat;
-	background-position: left 7px;
-	background-size: 20px 20px;
+  background-image: url("../images/Social_Media/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: left 7px;
+  background-size: 20px 20px;
 }
 
 .youtube:hover {
-	background-image: url("../images/Social_Media/youtube_yellow.svg");
+  background-image: url("../images/Social_Media/youtube_yellow.svg");
 }
 
 .activist_info ul li a {
-	font-size: 16px;
-	padding-left: 23px;
-	padding-bottom: 0;
-	display: inline-block;
-	padding-left: 28px;
-	color: #1877f2;
-	text-decoration: none;
-	font-weight: 500;
-	line-height: 1.5;
+  font-size: 16px;
+  padding-left: 23px;
+  padding-bottom: 0;
+  display: inline-block;
+  padding-left: 28px;
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .activist_info ul li a:hover {
-	color: #ffff99;
+  color: #ffff99;
 }
 
 .item a {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 /* Tablet breakpoint */
 @media all and (min-width: 768px) {
-	.container {
-		margin-top: 135px;
-	}
+  .container {
+    margin-top: 135px;
+  }
 
-	.photo1,
-	.photo2,
-	.photo3,
-	.photo4,
-	.photo5,
-	.photo6 {
-		flex-direction: row;
-		text-align: left;
-		padding: 20px;
-		gap: 20px;
-	}
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4,
+  .photo5,
+  .photo6 {
+    flex-direction: row;
+    text-align: left;
+    padding: 20px;
+    gap: 20px;
+  }
 }
 
 /* Desktop breakpoint */
 @media all and (min-width: 1024px) {
-	.container {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			"text-media text-media"
-			"photo1 photo2"
-			"photo3 photo4"
-			"photo5 photo6"
-			"footer footer";
-	}
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "text-media text-media"
+      "photo1 photo2"
+      "photo3 photo4"
+      "photo5 photo6"
+      "footer footer";
+  }
 
-	.activist_image {
-		width: 200px;
-	}
+  .activist_image {
+    width: 200px;
+  }
 
-	.item a {
-		font-size: 20px;
-	}
+  .item a {
+    font-size: 20px;
+  }
 
-	.photo1,
-	.photo3,
-	.photo5 {
-		margin-right: 0.1rem;
-	}
+  .photo1,
+  .photo3,
+  .photo5 {
+    margin-right: 0.1rem;
+  }
 
-	.photo2,
-	.photo4,
-	.photo6 {
-		margin-left: 0.1rem;
-	}
+  .photo2,
+  .photo4,
+  .photo6 {
+    margin-left: 0.1rem;
+  }
 }
